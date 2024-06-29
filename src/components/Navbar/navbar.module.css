@@ -1,0 +1,10 @@
+.mainMenu{
+    display: flex;
+    align-items: center;
+}
+
+.menuLink{
+    margin-left: 20px;
+    cursor: pointer;
+    color: #000;
+}
