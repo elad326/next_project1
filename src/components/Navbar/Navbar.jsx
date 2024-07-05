@@ -1,6 +1,7 @@
-import Link from "next/link";
+
 import styles from "./navbar.module.css";
 import menuItems from './menuItems';
+import NavLink from "./NavLinks/NavLink";
 
 
 
@@ -10,7 +11,7 @@ const Navbar = () => {
     <nav className={styles.mainMenu}>
 
         {menuItems.map((item) => (
-            <Link href={item.path} key={item.name} className={styles.menuLink}>{item.name}</Link>
+            <NavLink item={item} key={item.path}/>
         ))}
 
     </nav>

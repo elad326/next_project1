@@ -1,0 +1,21 @@
+
+
+.menuLink{
+    --bgColor: transparent;
+    --color: #000;
+    background-color: var(--bgColor);
+    color: var(--color);
+    margin-left: 20px;
+    cursor: pointer;
+    color: #000;
+    margin-right: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active{
+    --bgColor: #ffc907;
+    --color: #ed3920;
+    border-bottom: 1px solid var(--color);
+    font-weight: 600;
+}

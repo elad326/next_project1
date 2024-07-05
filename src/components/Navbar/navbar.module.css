@@ -1,10 +1,6 @@
 .mainMenu{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 36px;
 }
 
-.menuLink{
-    margin-left: 20px;
-    cursor: pointer;
-    color: #000;
-}
