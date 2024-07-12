@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
         <Link href="/">
-            <Image src="/tora_logo.jpg" alt="לוגו האתר" width={150} height={150} />
+            <Image src="/tora_logo.jpg" alt="לוגו האתר" width={150} height={150}  className={styles.siteLogo}/>
         </Link>
         <Navbar/>
     </div>
