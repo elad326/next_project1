@@ -1,0 +1,32 @@
+
+/* all topics */
+.wrapTopic{
+    border-radius: 5px;
+    border: 2px solid #E0E0E0;
+    text-align: center;
+    padding: 15px;
+
+    & h3{
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+}
+
+.allTopics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+
+/* one topic */
+.topicName{
+    text-align: center;
+    color: #fff;
+    padding: 13px;
+    background-color: #e72724;
+}

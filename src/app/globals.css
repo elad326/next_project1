@@ -7,6 +7,14 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   direction: rtl;
+}
+
+:root{
+  --pagePadding: 113px;
 }
