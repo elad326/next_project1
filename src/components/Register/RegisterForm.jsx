@@ -1,10 +1,25 @@
-import TextInput from "../TextInput/TextInput"
+"use client";
 
+import TextInput from "../TextInput/TextInput";
+import { useFormStatus } from "react-dom";
+import { registerToDB } from '@/lib/actions';
+
+
+const SubmitForm = () => {
+  const { pending, data } = useFormStatus();
+  return <>
+        {pending? "waiting": null}
+        <button type="submit">הרשמה</button>
+      </>;
+}
 
 const RegisterForm = () => {
+
+  
+
   return (
     <div>
-        <form action="" method="post">
+        <form action={registerToDB} method="post">
 
             <TextInput type="text" name="userFullName" placeholder="אנא הכניסו שם מלא"/>
             <TextInput type="tel" name="userTel" placeholder="אנא הכניסו טלפון"/>
@@ -13,7 +28,7 @@ const RegisterForm = () => {
             <TextInput type="password" name="userPassword" placeholder="אנא הכניסו סיסמא"/>
             <TextInput type="password" name="userPasswordRepeat" placeholder="אנא הכניסו סיסמא שוב"/>
 
-            <button type="submit">הרשמה</button>
+            <SubmitForm/>
             
         </form>
     </div>
