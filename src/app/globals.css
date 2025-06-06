@@ -17,4 +17,8 @@ body{
 
 :root{
   --pagePadding: 113px;
+
+  @media only screen and (max-width: 768px){
+    --pagePadding: 15px;
+  }
 }

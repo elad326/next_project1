@@ -1,0 +1,23 @@
+
+.wrapInput label{
+    display: block;
+    width: 85%;
+    margin: 3px auto;
+}
+
+.wrapInput input{
+    display: block;
+    width: 85%;
+    height: 45px;
+    border-radius: 5px;
+    margin: 15px auto;
+    text-align: right;
+}
+
+.wrapInput .errMsg{
+    color: red;
+    width: 85%;
+    margin: 3px auto;
+    border: 1px solid red;
+    margin-bottom: 9px;
+}

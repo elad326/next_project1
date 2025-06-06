@@ -61,7 +61,7 @@ export default function Home() {
         <div className={styles.topicsBox}>
           {
             topicList.map((item) => 
-              <Topic {...item}/>
+              <Topic key={item.title} {...item}/>
             )
           }
 

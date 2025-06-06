@@ -11,7 +11,7 @@ const Topic = ({icon, title, topicName}) => {
         <div className={styles.allTopics}>
             {
                 topicName.map((item) =>
-                    <TopicName name={item.name} url={item.url}/>
+                    <TopicName key={item.name} name={item.name} url={item.url}/>
                 )
             }
         </div>
